@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нимфа — магазин флористики</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Нимфа — на главную">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span class="logo-text">Нимфа</span>
+      </a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#catalog">каталог</a>
+        <a href="#subscription">подписка</a>
+        <a href="#how">как работает</a>
+        <a href="#compositions">композиции</a>
+        <a href="#faq">faq</a>
+        <a href="#contacts">контакты</a>
+      </nav>
+      <div class="header-buttons">
+        <button type="button" class="btn-ghost btn-header">Поиск</button>
+        <button type="button" class="btn-solid btn-header" data-open-catalog>Каталог</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="hero-tags" aria-label="Сервис и свойства">
+            <span class="tag-note">сервис флористики</span>
+            <span class="tag-text tag-pill">доставка 2–4 часа</span>
+            <span class="tag-text tag-pill">сезонные цветы</span>
+            <span class="tag-text tag-pill">индивидуальная сборка</span>
+          </div>
+          <h1 class="hero-title">Живые букеты <br>в тёмной эстетике</h1>
+          <p class="hero-lead">Доставка композиций для дома, офиса и событий. Визуально «дорого», по ощущению «вау», по процессу «без боли».</p>
+          <div class="hero-buttons">
+            <a href="#catalog" class="btn-solid">Собрать букет</a>
+            <a href="#subscription" class="btn-outline">Подписка на месяц</a>
+          </div>
+        </div>
+
+        <div class="hero-promo" aria-label="Подборка коллекции">
+          <div class="promo-shell">
+            <div class="promo-left">
+              <img src="f1.png" alt="Коллекция Velvet Garden" width="800" height="1000" loading="eager">
+              <div class="promo-label">
+                <div class="promo-title">Коллекция «Velvet Garden»</div>
+                <div class="promo-subtitle">Сдержанная палитра, сильная фактура</div>
+              </div>
+            </div>
+            <div class="promo-right">
+              <div class="promo-price-card">
+                <div class="promo-badge">season drop</div>
+                <div class="promo-price-box">
+                  <div class="promo-price">от 3 900 ₽</div>
+                  <div class="promo-desc">мини-композиции</div>
+                </div>
+              </div>
+              <div class="promo-small-card">
+                <img src="f2.png" alt="Мини-композиция" width="400" height="500" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="section section-season">
+      <div class="container">
+        <h2 class="section-title">Сезонная коллекция</h2>
+        <div class="season-grid">
+          <article class="season-card">
+            <div class="season-card__media">
+              <img src="f3.png" alt="Green Velvet" loading="lazy">
+            </div>
+            <div class="season-card__body">
+              <h3 class="season-card__title">Green Velvet</h3>
+              <div class="season-card__tags">
+                <span>тёмная зелень</span>
+                <span>структурные линии</span>
+              </div>
+              <p class="season-card__price">от 3 900 ₽</p>
+            </div>
+          </article>
+          <article class="season-card">
+            <div class="season-card__media">
+              <img src="f4.png" alt="Almond Light" loading="lazy">
+            </div>
+            <div class="season-card__body">
+              <h3 class="season-card__title">Almond Light</h3>
+              <div class="season-card__tags">
+                <span>матовые ленты</span>
+                <span>мягкий свет</span>
+              </div>
+              <p class="season-card__price">от 6 000 ₽</p>
+            </div>
+          </article>
+          <article class="season-card">
+            <div class="season-card__media">
+              <img src="f5.png" alt="Plum Wine" loading="lazy">
+            </div>
+            <div class="season-card__body">
+              <h3 class="season-card__title">Plum Wine</h3>
+              <div class="season-card__tags">
+                <span>сливовый акцент</span>
+                <span>глубина тона</span>
+              </div>
+              <p class="season-card__price">от 9 900 ₽</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sub-how" id="subscription">
+      <div class="container sub-how-grid">
+        <div class="sub-block">
+          <div class="sub-block__inner">
+            <h2 class="sub-block__title">Цветы, которые приезжают сами</h2>
+            <div class="sub-stats">
+              <div class="sub-stat">
+                <span class="sub-stat__value">1, 2 или 4</span>
+                <span class="sub-stat__label">доставки в месяц</span>
+              </div>
+              <div class="sub-stat">
+                <span class="sub-stat__value">от 6 000 ₽</span>
+                <span class="sub-stat__label">стоимость</span>
+              </div>
+              <div class="sub-stat">
+                <span class="sub-stat__value">85%</span>
+                <span class="sub-stat__label">продлевают</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contacts" class="btn-solid sub-block__cta">Оформить</a>
+        </div>
+        <div class="how-block" id="how">
+          <h2 class="how-block__title">Как это работает</h2>
+          <ol class="how-steps">
+            <li><span class="how-steps__num">1</span><span class="how-steps__text">Выбор</span></li>
+            <li><span class="how-steps__num">2</span><span class="how-steps__text">Настройка</span></li>
+            <li><span class="how-steps__num">3</span><span class="how-steps__text">Сборка</span></li>
+            <li><span class="how-steps__num">4</span><span class="how-steps__text">Доставка</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="compositions" class="section section-compositions">
+      <div class="container compositions-row">
+        <div class="compositions-main">
+          <h2 class="section-title section-title--compositions">Композиции</h2>
+          <div class="promo-shell promo-shell--wide">
+            <div class="promo-left">
+              <img src="f6.png" alt="Главная композиция" loading="lazy">
+              <div class="promo-label">
+                <div class="promo-title">Velvet Still</div>
+                <div class="promo-subtitle">Крупный объём, спокойный ритм</div>
+              </div>
+            </div>
+            <div class="promo-right promo-right--stack">
+              <div class="promo-stack-card">
+                <img src="f7.png" alt="Almond Vase" loading="lazy">
+                <div class="promo-label promo-label--sm">
+                  <div class="promo-title">Almond Vase</div>
+                  <div class="promo-subtitle">лёгкость и баланс</div>
+                </div>
+              </div>
+              <div class="promo-stack-card">
+                <img src="f8.png" alt="Plum Accent" loading="lazy">
+                <div class="promo-label promo-label--sm">
+                  <div class="promo-title">Plum Accent</div>
+                  <div class="promo-subtitle">глубокий акцент</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="services-aside" aria-label="Услуги">
+          <h2 class="services-aside__title">Услуги</h2>
+          <div class="services-pair">
+            <article class="service-card">
+              <div class="service-card__media">
+                <img src="f9.png" alt="Event Floral" loading="lazy">
+              </div>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Event Floral</h3>
+                <p class="service-card__sub">свадьбы · бренд · ужины</p>
+              </div>
+            </article>
+            <article class="service-card service-card--muted">
+              <div class="service-card__media service-card__media--placeholder">
+                <img src="f10.png" alt="Подписки" loading="lazy">
+              </div>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Подписки</h3>
+                <p class="service-card__sub">регулярно · спокойно · красиво</p>
+              </div>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-faq-contact">
+      <div class="container faq-contact-row">
+        <div class="faq-panel" id="faq">
+          <h2 class="section-title">FAQ</h2>
+          <div class="faq-list" data-accordion>
+            <div class="faq-item">
+              <button type="button" class="faq-q" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">
+                <span>Как быстро привезёте?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
+                Обычно за 2–4 часа по Москве. Точное время согласуем после оформления.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-q" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">
+                <span>Можно собрать индивидуально?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
+                Да: по референсу, по бюджету и по поводу — напишите в форме или в Telegram.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-q" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">
+                <span>Подписку можно паузить?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
+                Да, пауза и смена частоты доставок — в пару кликов в личном кабинете.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-panel" id="contacts">
+          <div class="contact-panel__head">
+            <h2 class="section-title">Связаться</h2>
+            <p class="contact-meta">доставка 10–18 · Москва</p>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <div class="contact-form__grid">
+              <label class="contact-field">
+                <span class="contact-field__label">Имя</span>
+                <input type="text" name="name" autocomplete="name" placeholder="">
+              </label>
+              <label class="contact-field">
+                <span class="contact-field__label">Телефон или Telegram</span>
+                <input type="text" name="contact" autocomplete="tel" placeholder="">
+              </label>
+              <label class="contact-field contact-field--message">
+                <span class="contact-field__label">Сообщение</span>
+                <textarea name="message" rows="5"></textarea>
+              </label>
+            </div>
+            <div class="contact-form__actions">
+              <button type="button" class="btn-outline">Написать в TG</button>
+              <button type="submit" class="btn-solid">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo logo--footer">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span class="logo-text">Нимфа</span>
+        </a>
+        <p class="footer-desc">Сервис флористики в тёмной эстетике: доставка и подписка на живые композиции.</p>
+        <p class="footer-copy">© 2026 vlodekafkas studio</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Разделы</h3>
+        <ul class="footer-links">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#subscription">Подписка</a></li>
+          <li><a href="#compositions">Композиции</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Инфо</h3>
+        <ul class="footer-links">
+          <li><a href="#!">Политика</a></li>
+          <li><a href="#!">Условия</a></li>
+          <li><a href="#!">Соцсети</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="catalog-modal" id="catalog-modal" aria-hidden="true">
+    <div class="catalog-modal__overlay" data-close-catalog></div>
+    <section class="catalog-modal__panel" role="dialog" aria-modal="true" aria-labelledby="catalog-title">
+      <button type="button" class="catalog-modal__close" aria-label="Закрыть каталог" data-close-catalog>×</button>
+      <h2 class="catalog-modal__title" id="catalog-title">Подбор букета</h2>
+      <p class="catalog-modal__lead">Выбери параметры, и мы покажем лучшие сочетания в палитре Нимфы.</p>
+
+      <div class="catalog-groups">
+        <div class="catalog-group">
+          <h3>Цвет</h3>
+          <div class="catalog-tags">
+            <button type="button">бордо</button>
+            <button type="button">сливовый</button>
+            <button type="button">пудровый</button>
+            <button type="button">тёмно-зелёный</button>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Стиль</h3>
+          <div class="catalog-tags">
+            <button type="button">минимализм</button>
+            <button type="button">романтика</button>
+            <button type="button">графичный</button>
+            <button type="button">драматичный</button>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Цветок</h3>
+          <div class="catalog-tags">
+            <button type="button">пионовидная роза</button>
+            <button type="button">ранункулюс</button>
+            <button type="button">орхидея</button>
+            <button type="button">гвоздика</button>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Сложность</h3>
+          <div class="catalog-tags">
+            <button type="button">базовая</button>
+            <button type="button">средняя</button>
+            <button type="button">премиум-сборка</button>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Цена</h3>
+          <div class="catalog-tags">
+            <button type="button">до 5 000 ₽</button>
+            <button type="button">5 000–10 000 ₽</button>
+            <button type="button">10 000+ ₽</button>
+          </div>
+        </div>
+        <div class="catalog-group">
+          <h3>Повод</h3>
+          <div class="catalog-tags">
+            <button type="button">день рождения</button>
+            <button type="button">свидание</button>
+            <button type="button">подарок в офис</button>
+            <button type="button">свадьба</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
